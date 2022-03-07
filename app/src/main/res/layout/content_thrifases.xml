@@ -7,6 +7,47 @@
     android:isScrollContainer="false"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="onButtonClear3f"
+        android:text="сбросить все "
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_delete"
+        app:iconPadding="1dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="11dp"
+        android:text="U, кВ:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/u3f2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="0.38"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imph"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/ktt"
         android:layout_width="105dp"
@@ -282,13 +323,16 @@
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="410dp"
+        android:layout_marginEnd="8dp"
         android:onClick="onButtonClick3f"
         android:text="@string/sum3f"
         android:textSize="18sp"
-        app:backgroundTint="#36B9FF"
+        app:backgroundTint="#0589CF"
         app:icon="@android:drawable/checkbox_on_background"
         app:iconPadding="1dp"
         app:iconTintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -296,15 +340,16 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="17dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="410dp"
-        android:onClick="onButtonClear3f"
+        android:layout_marginEnd="36dp"
+        android:onClick="onButtonClear3f2"
         android:text="Очистка"
         android:textSize="18sp"
-        app:backgroundTint="#36B9FF"
         app:icon="@android:drawable/ic_menu_close_clear_cancel"
         app:iconPadding="1dp"
         app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toTopOf="parent" />
 

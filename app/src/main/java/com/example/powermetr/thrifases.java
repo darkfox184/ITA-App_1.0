@@ -24,19 +24,10 @@ public class thrifases extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /*FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
     }
 
-    public void onButtonClick3f(View view) {
-        float toka, tokb, tokc, kolimp, impt, ktt;
+    public void onButtonClick3f(View v) {
+        float toka, tokb, tokc, kolimp, impt, ktt, u3f2;
         Double rashti;
         EditText ptoka = (EditText) findViewById(R.id.toka);
         EditText ptokb = (EditText) findViewById(R.id.tokb);
@@ -51,6 +42,7 @@ public class thrifases extends AppCompatActivity {
         TextView pres3epu = (TextView) findViewById(R.id.res3epu);
         TextView ppow3fimp = (TextView) findViewById(R.id.pow3fimp);
         EditText pktt = (EditText) findViewById(R.id.ktt);
+        EditText pu3f2 = (EditText) findViewById(R.id.u3f2);
 
         if (TextUtils.isEmpty(ptoka.getText().toString())) {
             ptoka.setError("Укажите ток!");
@@ -70,7 +62,12 @@ public class thrifases extends AppCompatActivity {
         } else {
             tokc = Float.parseFloat(ptokc.getText().toString());
         }
-
+        if (TextUtils.isEmpty(pu3f2.getText().toString())) {
+            pu3f2.setError("Укажите напряжение сети!");
+            u3f2 = 0;
+        } else {
+            u3f2 = Float.parseFloat(pu3f2.getText().toString());
+        }
        ktt = Float.parseFloat(pktt.getText().toString());
 
         float kosf = Float.parseFloat(pkosf.getText().toString());
@@ -80,7 +77,7 @@ public class thrifases extends AppCompatActivity {
         double tok3f1 = Math.ceil(tok3f * scale) / scale;
         prestok3f.setText(Double.toString(tok3f1));
 
-        double pow3f = Math.sqrt(3) * 0.38 * tok3f * kosf;
+        double pow3f = Math.sqrt(3) * u3f2 * tok3f * kosf;
 
         double pow3f1 = Math.ceil(pow3f * scale) / scale;
         prespow3f.setText(Double.toString(pow3f1));
@@ -111,14 +108,35 @@ public class thrifases extends AppCompatActivity {
         ppow3fimp.setText(Double.toString(pow3fimp1));
     }
 
-    public void onButtonClear3f(View view) {
+    public void onButtonClear3f(View v) {
         EditText ptoka = (EditText) findViewById(R.id.toka);
         EditText ptokb = (EditText) findViewById(R.id.tokb);
         EditText ptokc = (EditText) findViewById(R.id.tokc);
         EditText pimpt = (EditText) findViewById(R.id.impt);
+        EditText pu3f2 = (EditText) findViewById(R.id.u3f2);
+        EditText pkosf = (EditText) findViewById(R.id.kosf);
+        EditText pkolimp = (EditText) findViewById(R.id.kolimp);
+        EditText pimph = (EditText) findViewById(R.id.imph);
+        EditText pktt = (EditText) findViewById(R.id.ktt);
         ptoka.getText().clear();
         ptokb.getText().clear();
         ptokc.getText().clear();
         pimpt.getText().clear();
+        pu3f2.setText(Double.toString(0.38));
+        pkosf.setText(Double.toString(1.0));
+        pkolimp.setText(Integer.toString(1));
+        pimph.setText(Integer.toString(8000));
+        pktt.setText(Integer.toString(1));
+    }
+    public void onButtonClear3f2(View v) {
+        EditText ptoka = (EditText) findViewById(R.id.toka);
+        EditText ptokb = (EditText) findViewById(R.id.tokb);
+        EditText ptokc = (EditText) findViewById(R.id.tokc);
+        EditText pimpt = (EditText) findViewById(R.id.impt);
+                ptoka.getText().clear();
+        ptokb.getText().clear();
+        ptokc.getText().clear();
+        pimpt.getText().clear();
+
     }
 }
