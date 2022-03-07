@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Intent3);
     }
     public void goToAnActivity4(View view) {
-        Intent Intent3 = new Intent(MainActivity.this, avtomat3f.class);
-        startActivity(Intent3);
+        Intent Intent4 = new Intent(MainActivity.this, avtomat3f.class);
+        startActivity(Intent4);
     }
 }
