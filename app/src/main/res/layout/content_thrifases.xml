@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/ktt"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="104dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/kosf"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pow3f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="349dp"
+        android:fontFamily="sans-serif"
+        android:text="Мощность 3Ф imph,кВт:"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="149dp"
+        android:text="@string/kimp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/ia"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/ib"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="149dp"
+        android:text="@string/ic"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tokb"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="104dp"
+        android:autofillHints="0"
+        android:ems="10"
+        android:hint="@string/tokb"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tokc"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="173dp"
+        android:autofillHints="0"
+        android:ems="10"
+        android:hint="@string/tokc"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="149dp"
+        android:text="@string/_10_imp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/imph"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/cos"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="80dp"
+        android:text="К тр/тока:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kosf"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/tokb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/impt"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="173dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tokc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/imph"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/imppu"
+        app:layout_constraintStart_toEndOf="@+id/toka"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pow3f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="251dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/pow3f"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/epu"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="317dp"
+        android:text="@string/t_imp_x10_c"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/respow3f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="251dp"
+        android:text="@string/respow3f"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pow3f2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pow3fimp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="349dp"
+        android:text="@string/respow3f"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pow3f"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/res3epu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:text="@string/resepu"
+        android:textColor="#FF0000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/rashti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="317dp"
+        android:text="@string/_0"
+        android:textColor="#FF0000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="410dp"
+        android:onClick="onButtonClick3f"
+        android:text="@string/sum3f"
+        android:textSize="18sp"
+        app:backgroundTint="#36B9FF"
+        app:icon="@android:drawable/checkbox_on_background"
+        app:iconPadding="1dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="410dp"
+        android:onClick="onButtonClear3f"
+        android:text="Очистка"
+        android:textSize="18sp"
+        app:backgroundTint="#36B9FF"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:iconPadding="1dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tok3f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="219dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tok3f"
+        android:textAlignment="textStart"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restok3f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="219dp"
+        android:text="@string/res3pow"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tok3f2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/toka"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/toka"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kolimp"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="173dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/impt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="rashti,textView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

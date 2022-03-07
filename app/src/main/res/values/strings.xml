@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Помощник инженера ЦРКП</string>
+    <string name="button">Button</string>
+    <string name="Ia">TextView</string>
+    <string name="Ib">TextView</string>
+    <string name="Ic">TextView</string>
+    <string name="sum3f">Расчет</string>
+    <string name="ia">Ток фазы А:</string>
+    <string name="ib">Ток фазы В:</string>
+    <string name="ic">Ток фазы С:</string>
+    <string name="tokc">Фаза С</string>
+    <string name="toka">Фаза А</string>
+    <string name="tokb">Фазв В</string>
+    <string name="tok3f">Средний ток,A:</string>
+    <string name="pow3f">Мощность 3Ф,кВт:</string>
+    <string name="res3pow">0</string>
+    <string name="respow3f">0</string>
+    <string name="imph">imp/h:</string>
+    <string name="epu">Погрешность ПУ, %:</string>
+    <string name="_10_imp">Время(kimp):</string>
+    <string name="resepu">0</string>
+    <string name="imps">Вермя импульсов</string>
+    <string name="imppu">8000</string>
+    <string name="title_activity_thrifases">Техпроверка 3х фазного ПУ</string>
+
+
+    <string name="cos">Cosф, рад.:</string>
+    <string name="_0_9">0.9</string>
+    <string name="_0">0</string>
+    <string name="t_imp_x10_c">T расчетное kimp, c:</string>
+    <string name="title_activity_onefase2">Техпроверка однофазного ПУ</string>
+    <string name="tok1f">Расчет</string>
+    <string name="tok1fa">Ток в фазе</string>
+    <string name="tok1fd">Ток фазы:</string>
+    <string name="_10">10 имп.</string>
+    <string name="_6400">6400</string>
+    <string name="pow1f">Мощность, кВт:</string>
+    <string name="main3f">Трехфазный ПУ</string>
+    <string name="main1f">Однофазный ПУ</string>
+    <string name="title_activity_avtomat">Выбор однофазного АВ</string>
+    <string name="title_activity_avtomat3f">Выбор трехфазного АВ</string>
+    <string name="kimp">Кол-во kimp:</string>
+
+
+</resources>
